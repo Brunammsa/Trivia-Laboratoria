@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Tech Trivia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+
+<body>
+    <header class="name-instrusctions">
+        <h1 id="user-name"></h1>
+        <h3>
+            Instruções: selecione apenas uma alternativa por questão e ao final
+            clique em Conferir respostas
+        </h3>
+    </header>
+    <main>
+        <section class="container-questions">
+            <div class="question">
+                <p class="question-number">1/3</p>
+                <p class="question-description">1- No CSS o font-size define:</p>
+                <form class="form-question">
+                    <span class="form-question-alternative">
+                        <input type="radio" name="question-1" id="question-1-1" value="incorreta" />
+                        <label for="question-1-1">Cor do texto</label><br />
+                    </span>
+                    <span class="form-question-alternative">
+                        <input type="radio" name="question-1" id="question-1-2" value="correta" />
+                        <label for="question-1-2">Tamanho do texto</label><br />
+                    </span>
+                    <span class="form-question-alternative">
+                        <input type="radio" name="question-1" id="question-1-3" value="incorreta" />
+                        <label for="question-1-3">Largura do texto</label>
+                    </span>
+                </form>
+            </div>
+
+            <div class="question">
+                <p class="question-number">2/3</p>
+                <p class="question-description">
+                    2- Quais os elementos que definem melhor o HTML semântico?
+                </p>
+                <form class="form-question">
+                    <span class="form-question-alternative">
+                        <input type="radio" name="question-2" id="question-2-1" value="incorreta" />
+                        <label for="question-2-1">Id, Label, Header, Div, Form</label><br />
+                    </span>
+                    <span class="form-question-alternative">
+                        <input type="radio" name="question-2" id="question-2-2" value="incorreta" />
+                        <label for="question-2-2">Header, Nav, Script, Div, Footer</label><br />
+                    </span>
+                    <span class="form-question-alternative">
+                        <input type="radio" name="question-2" id="question-2-3" value="correta" />
+                        <label for="question-2-3">Header, Main, Nav, Section, Article, Aside e Footer</label>
+                    </span>
+                </form>
+            </div>
+
+            <div class="question">
+                <p class="question-number">3/3</p>
+                <p class="question-description">
+                    3- JavaScript é uma linguagem de programação interpretada
+                    estruturada de:
+                </p>
+                <form class="form-question">
+                    <span class="form-question-alternative">
+                        <input type="radio" name="question-3" value="correta" id="question-3-1" />
+                        <label for="question-3-1">Alto nível</label><br />
+                    </span>
+                    <span class="form-question-alternative">
+                        <input type="radio" name="question-3" value="incorreta" id="question-3-2" />
+                        <label for="question-3-2">Baixo nível</label><br />
+                    </span>
+                    <span class="form-question-alternative">
+                        <input type="radio" name="question-3" value="incorreta" id="question-3-3" />
+                        <label for="question-3-3">Médio nível</label>
+                    </span>
+                </form>
+            </div>
+        </section>
+
+        <section class="check-answers">
+            <button class="button-answer" id="button-answer" name="modal" type="submit">
+                Conferir respostas
+            </button>
+        </section>
+        <section class="modal">
+            <dialog id="modal">
+                <h1 id="phrase"></h1>
+                <h2 id="points"></h2>
+                <p id="feedback"></p>
+                <div class="links-dialog">
+                    <a href="questions.html" class="remake">Refazer</a>
+                    <a href="index.html" class="out">Sair</a>
+                </div>
+            </dialog>
+        </section>
+    </main>
+    <script src="page2.js"></script>
+    <footer>Desenvolvido por B&E</footer>
+</body>
+
+</html>
+<!DOCTYPE html>
